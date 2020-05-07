@@ -4,7 +4,7 @@
 namespace fractal {
 	Bitmap::Bitmap(int width, int height) : m_width(width), m_height(height), m_pPixel(new uint8_t[width*height*3])
 	{
-
+		cout << "w: " << width << "\nh: " << height << "\npPixel: " << m_pPixel << endl;
 	}
 
 	void Bitmap::setPixel(Point point, Color color)
