@@ -5,7 +5,7 @@
 #include <cstdint>
 using namespace std;
 
-#pragma pack(2)
+#pragma pack(push, 2)
 
 namespace fractal {
 	struct BitmapFile {
@@ -14,9 +14,10 @@ namespace fractal {
 		int32_t fileSize;
 		/* reserved memory */
 		int32_t reserved{ 0 };
-		/*  */
 		int32_t dataOffset;
 	};
 }
+
+#pragma pack(pop)
 
 #endif /* BITMAPFILE_H_ */

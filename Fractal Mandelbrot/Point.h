@@ -5,13 +5,11 @@ using namespace std;
 class Point
 {
 private:
-	/* pair first x, second y*/
-	pair<int, int> point;
+	
 public:
+	/* pair first x, second y*/
+	int x, y;
 	Point(int x, int y);
 
-	Point(pair<int, int> p);
-
-	pair<int, int> getPoint();
 };
 

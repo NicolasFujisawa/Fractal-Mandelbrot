@@ -5,7 +5,7 @@
 #include <cstdint>
 using namespace std;
 
-#pragma pack(2)
+#pragma pack(push, 2)
 namespace fractal {
 	struct BitmapInfo {
 		int32_t headerSize{ 40 };
@@ -22,5 +22,5 @@ namespace fractal {
 
 	};
 }
-
+#pragma pack(pop)
 #endif /* BITMAPINFO_H_ */
