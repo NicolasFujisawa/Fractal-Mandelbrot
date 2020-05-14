@@ -10,8 +10,11 @@ using namespace std;
 namespace fractal {
 	struct BitmapFile {
 		char header[2]{ 'B', 'M' };
+		/* size of file */
 		int32_t fileSize;
+		/* reserved memory */
 		int32_t reserved{ 0 };
+		/*  */
 		int32_t dataOffset;
 	};
 }
