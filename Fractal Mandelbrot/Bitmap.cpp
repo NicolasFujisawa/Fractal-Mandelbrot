@@ -8,7 +8,7 @@ using namespace fractal;
 using namespace std;
 
 namespace fractal {
-	Bitmap::Bitmap(int width, int height) : 
+	Bitmap::Bitmap(int width, int height) :
 		m_width(width), m_height(height), m_pPixel(new uint8_t[width * height * 3]{})
 	{
 		cout << "w: " << width << "\nh: " << height << "\npPixel: " << m_pPixel << endl;
@@ -30,10 +30,10 @@ namespace fractal {
 		BitmapFile bitmapFile;
 		BitmapInfo bitmapInfo;
 
-		
+
 		bitmapFile.fileSize = sizeof(BitmapFile) + sizeof(BitmapInfo) + m_width * m_height * 3;
 		bitmapFile.dataOffset = sizeof(BitmapFile) + sizeof(BitmapInfo);
-		
+
 		bitmapInfo.width = m_width;
 		bitmapInfo.height = m_height;
 
@@ -56,7 +56,7 @@ namespace fractal {
 		return true;
 	}
 
-	Bitmap::~Bitmap() 
+	Bitmap::~Bitmap()
 	{
 		std::clog << "Bitmap destroied" << std::endl;
 	}

@@ -12,7 +12,7 @@ namespace fractal {
 	private:
 		int m_width{ 0 };
 		int m_height{ 0 };
-		unique_ptr<uint8_t[]> m_pPixel{ nullptr };
+		unique_ptr<uint8_t[]> m_pPixel;
 	public:
 		Bitmap(int width, int height);
 		void setPixel(Point point, Color color);

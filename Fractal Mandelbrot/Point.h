@@ -5,7 +5,7 @@ using namespace std;
 class Point
 {
 private:
-	
+
 public:
 	/* pair first x, second y*/
 	int x, y;
